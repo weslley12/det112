@@ -98,3 +98,16 @@ header#cabecalho{
 	background: url("../_imagens/glass-logo-peq.jpg") no-repeat;
 
 }
+
+header#cabecalho h1{
+	font-family: arial, sans-serif;
+	font-size: 30pt;
+	color: #606060;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .6)
+}
+
+header#cabecalho h2{
+	font-family: arial, sans-serif;
+	font-size: 15pt;
+	color: #888888;
+}
