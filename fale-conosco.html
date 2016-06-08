@@ -14,19 +14,21 @@ Fale Conosco > Contato
 Formulário de Contato
 por Gustavo Guanabara
 Atualizado em 01/Maio/2013
-
-Identificação do Usuário
-    Nome:
-    Senha:
-    E-mail:
-    Sexo:
-        - Masculino
-        - Feminino
-    Data de Nascimento:
-
-Endereço do Usuário
-    Logradouro:
-    Número:
+<fieldset id="usuario">
+    <legend>Identificação do Usuário</legend>
+    <p><label for="campoNome">Nome:</label><input type="text" name="txtNome" id="campoNome" size="30" maxlength="40" placeholder="Nome Completo"></input></p>
+    <p><label for="campoPass">Senha:</label><input type="password" name="txtPass" id="campoPass" size="8" maxlength="8" placeholder="8 Digitos"></input></p>
+    <p><label for="campoEmail">E-mail:</label><input type="email" name="txtEmail" id="campoEmail" size="20" maxlength="40" placeholder="E-mail"></input></p>
+    <fieldset id="sexo">
+    <legend>Sexo:</legend>
+        <input type="radio" name="rdbSexo" id="campoM" checked="true" /> <label for="campoM">Masculino</label><br>
+        <input type="radio" name="rdbSexo" id="campoF"/> <label for="campoF">Feminino</label>
+    </fieldset>    
+    <p><label for="campoData">Data de Nascimento:</label><input type="date" name="txtData" id="campoData"/></p>
+</fieldset>
+<legend>Endereço do Usuário</legend>
+    <p><label for="campoLog">Logradouro:</label><input type="text" name="txtLog" id="campoLog" size="13" maxlength="80" placeholder="Rua/Av/etc"></input></p>
+    <p><label for="campoN">Número:</label><input type="number" name="txtN" id="campoN" min="0" max="99999"></input>
     Estado:
     Cidade:
 
